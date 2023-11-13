@@ -134,16 +134,17 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-
-
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
+debugger;
 const pages = document.querySelectorAll("[data-page]");
-
+console.log(pages);
+console.log(navigationLinks);
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-
+    debugger;
+    console.log(this.innerHTML.toLowerCase());
     for (let i = 0; i < pages.length; i++) {
       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
         pages[i].classList.add("active");
