@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile-First Webpage</title>
+  <style>
+    /* Mobile styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Desktop styles */
+    @media (min-width: 768px) {
+      body {
+        background-color: #f2f2f2;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>Section 1</h1>
+    <p>This is the content of section 1.</p>
+  </section>
+
+  <section>
+    <h1>Section 2</h1>
+    <p>This is the content of section 2.</p>
+  </section>
+
+  <section>
+    <h1>Section 3</h1>
+    <p>This is the content of section 3.</p>
+  </section>
+
+  <section>
+    <h1>Section 4</h1>
+    <p>This is the content of section 4.</p>
+  </section>
+</body>
+</html>
