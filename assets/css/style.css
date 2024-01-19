@@ -823,10 +823,14 @@ main {
   box-shadow: 0 0 0 4px var(--jet);
 }
 
-.timeline-text {
+.timeline-text, .ul-timeline-list {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+.ul-timeline-list {
+  list-style-type: circle;
 }
 
 
