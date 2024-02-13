@@ -21,7 +21,7 @@ async function getBlogPosts() {
   }
 }
 
-function getPostObejct(post) {
+function getPostObject(post) {
     post.content = post.content.replace(/<p>|<\/p>/g, '');
     return post = {
         title: post.title,
@@ -52,7 +52,7 @@ async function loadBlogPosts(){
     let toAdd = document.createDocumentFragment();
     document.getElementById('blog-posts-list').innerHTML = '';
     posts.forEach(post => {
-        let htmlString = getHtmlString(getPostObejct(post));
+        let htmlString = getHtmlString(getPostObject(post));
         let newLi = document.createElement('li');
         newLi.className = 'blog-post-item';
         newLi.innerHTML = htmlString; 
